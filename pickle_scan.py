@@ -1,5 +1,5 @@
 # copyright zxix 2022
-# https://creativecommons.org/licenses/by-nc-nd/4.0/
+# https://creativecommons.org/licenses/by-nc-sa/4.0/
 import torch
 import pickle_inspector
 import sys
