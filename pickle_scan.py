@@ -65,7 +65,7 @@ for path in BASE_DIR.glob(r'**/*'):
       for call in BAD_CALLS:
         print("library call (" + call + ".): " + str(result_calls[call]))
       for signal in BAD_SIGNAL:
-        print("malicious signal (" + signal + ".): " + str(result_signals[signal]))
+        print("malicious signal (" + signal + "): " + str(result_signals[signal]))
       print("non-standard calls: " + str(result_other))
       print("total: " + str(result_total))
       print("")
