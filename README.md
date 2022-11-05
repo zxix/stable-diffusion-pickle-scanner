@@ -23,6 +23,18 @@ If you get an error about torch not being installed, start your webui and copy t
 >
 > `"F:\Projects\stable-diffusion-webui\venv\Scripts\Python.exe" pickle_scan.py models > scan_output.txt`
 
+## Usage
+
+```shell
+python pickle_scan.py [directory] [debugmode]
+```
+
+Example
+
+```shell
+python pickle_scan.py models
+```
+
 ## Debug Mode
 
 Add `1` after directory to see which calls / signals triggered the scan failure.
