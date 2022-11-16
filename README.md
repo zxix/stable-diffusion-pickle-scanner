@@ -2,13 +2,29 @@
 
 Scan `.pt`, `.ckpt` and `.bin` files for potentially malicious code.
 
+## How to set up and use with AUTOMATIC1111 web UI (Windows)
+1. Download the three files `pickle_inspector.py`, `pickle_scan.py` and `_start-pickle-scan.cmd` to any directory
+2. Open `_start-pickle-scan.cmd` with notepad (or any text editor)
+3. Copy your venv path between the quotation marks in the line starting with `SET VENV_PATH=`. When you start the UI this should be displayed in the first line of the console window. Example *venv "**E:\stable-diffusion-webui\venv\Scripts\Python.exe**"*
+4. Copy the path to your model folder between the quotation marks in the line starting with `SET SD_FOLDER=`. Example *E:\stable-diffusion-webui\models*
+5. (optional) If yo would like to scan an additional folder you can copy the path between the quotation marks in the line starting with `SET DOWNLOAD_FOLDER`. In case you want to scan a checkpoint before moving it into the proper model folder, otherwise leave as is
+6. Save the script file
+7. Doubleclick `_start-pickle-scan.cmd` and wait for the scan to complete
+The last few lines show how many suspicious files were found
+```shell
+"Number of failed scans (potentially malicious files):"
+
+---------- SCAN_OUTPUT.TXT: 0
+```
+
+
 Example output (with `numpy` considered "non-standard"):
 
 ![Code_-_Insiders_Db9qYRswOQ](https://user-images.githubusercontent.com/114846827/200138825-777e4e43-67c0-44cb-b5a7-80ee141ceb7c.png)
 
-## How to use
+## How to use otherwise
 
-1. Export `pickle_inspector.py` and `pickle_scan.py` to your Stable Diffusion WebUI base directory
+1. Export `pickle_inspector.py` and `pickle_scan.py` to your Stable Diffusion base directory
 2. Open bash / CMD
 3. Run command `python pickle_scan.py models > scan_output.txt`
 4. Open `scan_output.txt`
