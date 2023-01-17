@@ -5,6 +5,8 @@ import pickle_inspector
 import sys
 from pathlib import Path
 
+sys.stdout.reconfigure(encoding='utf-8')
+
 debug = len(sys.argv) == 3
 
 dir = sys.argv[1]
