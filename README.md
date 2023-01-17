@@ -2,7 +2,7 @@
 
 Scan `.pt`, `.ckpt` and `.bin` files for potentially malicious code.
 
-## How to use otherwise
+## How to use
 
 1. Export `pickle_inspector.py` and `pickle_scan.py` to your Stable Diffusion base directory
 2. Open bash / CMD
