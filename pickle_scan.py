@@ -34,7 +34,7 @@ for path in BASE_DIR.glob(r'**/*'):
     for signal in BAD_SIGNAL:
       result_signals[signal] = 0
 
-    for c in result.calls:
+    for c in result_calls:
       for call in BAD_CALLS:
         if (c.find(call + ".") == 0):
           result_calls[call] += 1
